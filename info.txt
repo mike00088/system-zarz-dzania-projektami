@@ -1,4 +1,6 @@
 KOD NA STWORZENIE BAZY DANYCH POTRZEBNEJ DO DZIAŁANIA PROJEKTU.
+http://localhost:8080/php/index.php
+
 
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
