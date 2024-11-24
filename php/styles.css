@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+form input, form textarea, form select, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #4cae4c;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tbody tr {
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.tr-niski {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.tr-sredni {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+.tr-wysoki {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.9);
+}
+
+button.delete {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background: #c9302c;
+}
+
+button.complete {
+    background: #0275d8;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+}
+
+button.complete:hover {
+    background: #025aa5;
+}

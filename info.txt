@@ -1,0 +1,57 @@
+KOD NA STWORZENIE BAZY DANYCH POTRZEBNEJ DO DZIAŁANIA PROJEKTU.
+
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Lis 24, 2024 at 07:39 PM
+-- Wersja serwera: 10.4.32-MariaDB
+-- Wersja PHP: 8.0.30
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `zarzadzanie_projektami`
+--
+CREATE DATABASE IF NOT EXISTS `zarzadzanie_projektami` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `zarzadzanie_projektami`;
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `projekty`
+--
+
+CREATE TABLE `projekty` (
+  `id_projektu` int(11) NOT NULL,
+  `nazwa` varchar(100) NOT NULL,
+  `opis` text DEFAULT NULL,
+  `data_rozpoczecia` date DEFAULT NULL,
+  `data_zakonczenia` date DEFAULT NULL,
+  `priorytet` enum('niski','sredni','wysoki') DEFAULT NULL,
+  `status` enum('nieukończony','ukończony') DEFAULT 'nieukończony'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Indeksy dla zrzutów tabel
+--
+
+--
+-- Indeksy dla tabeli `projekty`
+--
+ALTER TABLE `projekty`
+  ADD PRIMARY KEY (`id_projektu`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `projekty`
+--
+ALTER TABLE `projekty`
+  MODIFY `id_projektu` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
